@@ -1,0 +1,90 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --font: "Inter", sans-serif;
+  --regular: 400;
+  --medium: 600;
+  --bold: 700;
+}
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-900);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--grey-700);
+}
+
+/* UTILITY CLASSES */
+.flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-container {
+  background-color: var(--grey-800);
+  border-radius: 1.25rem;
+  width: 420px;
+  max-width: calc(100% - 48px);
+  padding: 2.5rem;
+}
+
+.img-container {
+  width: min(88px, 100%);
+}
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-info {
+  text-align: center;
+}
+.list-container {
+}
+
+.header-1 {
+  color: var(--white);
+  font-weight: var(--bold);
+  font-size: 1.5rem;
+}
+
+.header-2 {
+  color: var(--green);
+  font-weight: var(--medium);
+  font-size: 1rem;
+}
+
+.header-3 {
+  color: var(--white);
+  font-weight: var(--regular);
+  font-size: 1rem;
+}
