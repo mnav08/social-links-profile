@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   min-height: 100vh;
   font-family: var(--font);
@@ -47,6 +51,14 @@ a {
   border-radius: 0.5rem;
   text-align: center;
   font-weight: var(--bold);
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--grey-900);
+  cursor: pointer;
+  background-color: var(--green);
 }
 
 /* UTILITY CLASSES */
@@ -80,27 +92,20 @@ a {
   gap: 1rem;
 }
 
-a:hover,
-a:focus {
-  color: var(--grey-900);
-  cursor: pointer;
-  background-color: var(--green);
-}
-
 .header-1 {
   color: var(--white);
   font-weight: var(--bold);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
 }
 
 .header-2 {
   color: var(--green);
   font-weight: var(--medium);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw + 0.5rem, 1rem);
 }
 
 .header-3 {
   color: var(--white);
   font-weight: var(--regular);
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw + 0.5rem, 1rem);
 }
